@@ -49,9 +49,9 @@ public class MainGame extends BaseGame {
 
 		modelBatch = new ModelBatch();
 
-		ModelLoader<ObjLoader.ObjLoaderParameters> loader = new ObjLoader();
-		model = loader.loadModel(Gdx.files.internal("data/house1.obj"));
-		instance = new ModelInstance(model);
+		//ModelLoader<ObjLoader.ObjLoaderParameters> loader = new ObjLoader();
+		//model = loader.loadModel(Gdx.files.internal("data/house1.obj"));
+		//instance = new ModelInstance(model);
 
 		setScreen(MainMenu.instance(this));
 	}
