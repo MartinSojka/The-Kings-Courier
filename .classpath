@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="assets"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/LIBGDX_1_6_5"/>
+	<classpathentry kind="var" path="LIBARCHIVE/gdx-freetype-1.6.5.jar" sourcepath="/LIBARCHIVE/gdx-freetype-1.6.5-sources.jar"/>
+	<classpathentry kind="var" path="LIBARCHIVE/artemis-odb-1.0.1.jar" sourcepath="/LIBARCHIVE/artemis-odb-artemis-odb-1.0.1.zip"/>
+	<classpathentry kind="var" path="LIBARCHIVE/gdx-freetype-platform-1.6.5-natives-desktop.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
