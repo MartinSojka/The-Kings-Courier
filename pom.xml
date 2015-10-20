@@ -25,10 +25,7 @@
             </configuration>
         </execution>
         <execution>
-<<<<<<< HEAD
             <id>add-resource</id>
-=======
->>>>>>> 2a1637053dac98c209fe9eaef50ef493930d3265
             <phase>generate-resources</phase>
             <goals><goal>add-resource</goal></goals>
             <configuration>
