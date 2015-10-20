@@ -30,7 +30,7 @@
             <goals><goal>add-resource</goal></goals>
             <configuration>
                 <resources>
-                    <directory>assets</directory>
+                    <resource><directory>assets</directory></resource>
                 </resources>
             </configuration>
         </execution>
