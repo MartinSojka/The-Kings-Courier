@@ -12,6 +12,7 @@
 	<plugin>
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>build-helper-maven-plugin</artifactId>
+    <version>1.9.1</version>
    	<executions>
         <execution>
             <phase>generate-sources</phase>
@@ -19,8 +20,16 @@
             <configuration>
                 <sources>
                     <source>src</source>
-                    <source>assets</source>
                 </sources>
+            </configuration>
+        </execution>
+        <execution>
+            <phase>generate-resources</phase>
+            <goals><goal>add-resource</goal></goals>
+            <configuration>
+                <resources>
+                    <resource>assets</resource>
+                </resources>
             </configuration>
         </execution>
     </executions>
