@@ -7,6 +7,9 @@
 	<artifactId>kingscourier</artifactId>
 	<version>0.0.1</version>
 	<name>The King's Courier</name>
+	<properties>
+		<mainClass>de.vernideas.rpg.kingscourier.Main</mainClass>
+	</properties>
 	<build>
 		<resources>
 			<resource>
@@ -31,6 +34,29 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>${mainClass}</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
@@ -46,8 +72,20 @@
 		</dependency>
 		<dependency>
 			<groupId>com.badlogicgames.gdx</groupId>
+			<artifactId>gdx-platform</artifactId>
+			<version>1.6.5</version>
+			<classifier>natives-desktop</classifier>
+		</dependency>
+		<dependency>
+			<groupId>com.badlogicgames.gdx</groupId>
 			<artifactId>gdx-freetype</artifactId>
 			<version>1.6.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.badlogicgames.gdx</groupId>
+			<artifactId>gdx-freetype-platform</artifactId>
+			<version>1.6.5</version>
+			<classifier>natives-x86</classifier>
 		</dependency>
 		<dependency>
 			<groupId>net.onedaybeard.artemis</groupId>
