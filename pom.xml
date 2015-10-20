@@ -10,7 +10,7 @@
 	<properties>
 		<jdk.version>1.7</jdk.version>
 		<mainClass>de.vernideas.rpg.kingscourier.Main</mainClass>
-		<libgdx.version>1.6.5</libgdx.version>
+		<libgdx.version>1.7.0</libgdx.version>
 	</properties>
 	<build>
 		<resources>
