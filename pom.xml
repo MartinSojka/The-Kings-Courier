@@ -10,7 +10,7 @@
 	<properties>
 		<jdk.version>1.7</jdk.version>
 		<mainClass>de.vernideas.rpg.kingscourier.Main</mainClass>
-		<libgdx.version>1.7.2</libgdx.version>
+		<libgdx.version>1.8.0</libgdx.version>
 	</properties>
 	<build>
 		<resources>
@@ -112,7 +112,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.badlogicgames.gdx</groupId>
-			<artifactId>gdx-backend-lwjgl</artifactId>
+			<artifactId>gdx-backend-lwjgl3</artifactId>
 			<version>${libgdx.version}</version>
 		</dependency>
 		<dependency>

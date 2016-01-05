@@ -1,16 +1,14 @@
 package de.vernideas.rpg.kingscourier;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
 public class Main {
 	public static void main(String[] args) {
-		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
-		cfg.title = "The-Kings-Courier";
-		cfg.width = 800;
-		cfg.height = 600;
-		cfg.samples = 4;
+		Lwjgl3ApplicationConfiguration cfg = new Lwjgl3ApplicationConfiguration();
+		cfg.setTitle("The-Kings-Courier");
+		cfg.setWindowedMode(800, 600);
 
-		new LwjglApplication(new MainGame(), cfg);
+		new Lwjgl3Application(new MainGame(), cfg);
 	}
 }
